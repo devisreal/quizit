@@ -91,6 +91,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .quiz-section__container {
   padding: 2rem;
@@ -244,7 +245,7 @@ body {
   font-weight: 600;
   position: absolute;
   right: 0.5rem;
-  top: 0.5rem;
+  top: 40%;
 }
 @media (min-width: 768px) {
   .stats-bar__questions {
@@ -257,4 +258,28 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
+}
+
+.home-btn {
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  box-shadow: 0 3px #999;
+  color: #7c3aed;
+  background-color: #ffffff;
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+.home-btn__wrapper {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.home-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }/*# sourceMappingURL=quiz.css.map */

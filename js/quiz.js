@@ -54,7 +54,7 @@ const createOption = (question) => {
 };
 
 const renderQuestions = (currentQuestion) => {
-  if (currentQuestionNumber < 3) {
+  if (currentQuestionNumber < questions.length) {
     currentQuestionNumber++;
     currentQuestionEl.innerHTML = currentQuestionNumber;
     quizQuestionEl.innerHTML = questions[currentQuestion].question;
@@ -96,7 +96,7 @@ quizSubmitButton.addEventListener("click", () => {
     scores.incorrect++;
   }
 
-  if (currentQuestion < 3) {
+  if (currentQuestion < questions.length) {
     currentQuestion++;
     renderQuestions(currentQuestion);
   } else {

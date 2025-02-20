@@ -7,6 +7,7 @@
   padding: 1.5rem;
   min-height: 100vh;
   @include flex(column, center, center);
+  position: relative;
 
   &__container {
     padding: 2rem;
@@ -144,7 +145,7 @@
     font-weight: 600;
     position: absolute;
     right: 0.5rem;
-    top: 0.5rem;
+    top: 40%;
 
     @include tablet {
       position: initial;
@@ -155,5 +156,28 @@
   &__incorrect {
     @include flex(row, space-between, center);
     gap: 0.5rem;
+  }
+}
+
+.home-btn {
+  &__wrapper {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  @include font-style(1rem, 400);
+  box-shadow: 0 3px #999;
+  color: #7c3aed;
+  background-color: #ffffff;
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.9);
   }
 }
