@@ -2,10 +2,6 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-body {
-  background: linear-gradient(140deg, #8b5cf6, #4f46e5);
-}
-
 .welcome-section {
   color: white;
   width: 100%;

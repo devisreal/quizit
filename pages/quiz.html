@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizIt - Quiz</title>
+    <link rel="stylesheet" href="../styles/pages/quiz.css" />
+
+    <script type="module" src="../js/quiz.js" defer></script>
+  </head>
+  <body>
+    <main class="quiz-section">
+      <div class="quiz-section__container">
+        <h1 class="quiz-section__container-title">QuizIt</h1>
+
+        <div class="stats-bar">
+          <div class="stats-bar__correct">
+            <img
+              src="../assets/icons/circle-check-big.png"
+              alt="Correct icon"
+              class="stats-bar__correct-icon"
+            />
+            <p class="stats-bar__text">
+              <span class="stats-bar__correct-number">0</span> Correct
+            </p>
+          </div>
+          <div class="stats-bar__questions">
+            <span class="stats-bar__questions-current">0</span>/<span
+              class="stats-bar__questions-total"
+              >0</span
+            >
+          </div>
+          <div class="stats-bar__incorrect">
+            <img
+              src="../assets/icons/circle-x.png"
+              alt="Incorrect icon"
+              class="stats-bar__incorrect-icon"
+            />
+            <p class="stats-bar__text">
+              <span class="stats-bar__incorrect-number">0</span> Incorrect
+            </p>
+          </div>
+        </div>
+
+        <div class="quiz">
+          <h2 class="quiz__question"></h2>
+          <div class="quiz__options"></div>
+          <p class="quiz__validation-msg"></p>
+
+          <div class="quiz__submit">
+            <button class="quiz__submit-button">Submit</button>
+            <a class="quiz__submit__retry-link" href="./quiz.html"
+              >Retry quiz</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
