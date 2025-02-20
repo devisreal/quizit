@@ -1,7 +1,5 @@
 import axios from "./libs/axios.js";
 
-const scores = { correct: 0, incorrect: 0 };
-
 async function getQuestions() {
   try {
     const { data } = await axios.get(
@@ -15,6 +13,7 @@ async function getQuestions() {
 
 let questions = await getQuestions();
 
+const scores = { correct: 0, incorrect: 0 };
 let currentQuestion = 0;
 let currentQuestionNumber = 0;
 const currentQuestionEl = document.querySelector(
@@ -26,7 +25,6 @@ totalQuestionsEl.innerHTML = questions.length;
 
 const statsCorrectEl = document.querySelector(".stats-bar__correct-number");
 const statsIncorrectEl = document.querySelector(".stats-bar__incorrect-number");
-const quizContainer = document.querySelector(".quiz");
 const quizQuestionEl = document.querySelector(".quiz__question");
 const quizSubmitButton = document.querySelector(".quiz__submit-button");
 const optionsContainerEl = document.querySelector(".quiz__options");
