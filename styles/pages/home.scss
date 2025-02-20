@@ -1,5 +1,45 @@
-@use '../base/typography';
+@use "../base/resets";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
-*{
-    font-family: 'Geologica', serif;
+body {
+  background: linear-gradient(140deg, #8b5cf6, #4f46e5);
+}
+
+.welcome-section {
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  @include flex(column, center, center);
+
+  &__title {
+    @include font-style(4rem, 600);
+  }
+
+  &__description {
+    @include font-style(1.3rem, 300);
+    margin-bottom: 1.5rem;
+  }
+
+  &__button-link {
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    @include font-style(1.25rem, 400);
+    box-shadow: 0 3px #999;
+    color: #7c3aed;
+    background-color: #ffffff;
+    transition-property: color, background-color, border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    &:active {
+      box-shadow: 0 2px #666;
+      transform: translateY(4px);
+    }
+  }
 }

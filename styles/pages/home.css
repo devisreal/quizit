@@ -4,6 +4,7 @@
   font-weight: 100;
   font-style: normal;
   font-display: fallback;
+  font-variation-settings: "slnt" 0, "CRSV" 1, "SHRP" 100;
 }
 @font-face {
   font-family: "Geologica";
@@ -11,6 +12,7 @@
   font-weight: 200;
   font-style: normal;
   font-display: fallback;
+  font-variation-settings: "slnt" 0, "CRSV" 1, "SHRP" 100;
 }
 @font-face {
   font-family: "Geologica";
@@ -18,6 +20,7 @@
   font-weight: 300;
   font-style: normal;
   font-display: fallback;
+  font-variation-settings: "slnt" 0, "CRSV" 1, "SHRP" 100;
 }
 @font-face {
   font-family: "Geologica";
@@ -25,6 +28,7 @@
   font-weight: 400;
   font-style: normal;
   font-display: fallback;
+  font-variation-settings: "slnt" 0, "CRSV" 1, "SHRP" 100;
 }
 @font-face {
   font-family: "Geologica";
@@ -32,6 +36,7 @@
   font-weight: 500;
   font-style: normal;
   font-display: fallback;
+  font-variation-settings: "slnt" 0, "CRSV" 1, "SHRP" 100;
 }
 @font-face {
   font-family: "Geologica";
@@ -39,6 +44,7 @@
   font-weight: 600;
   font-style: normal;
   font-display: fallback;
+  font-variation-settings: "slnt" 0, "CRSV" 1, "SHRP" 100;
 }
 @font-face {
   font-family: "Geologica";
@@ -46,6 +52,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: fallback;
+  font-variation-settings: "slnt" 0, "CRSV" 1, "SHRP" 100;
 }
 @font-face {
   font-family: "Geologica";
@@ -53,6 +60,7 @@
   font-weight: 800;
   font-style: normal;
   font-display: fallback;
+  font-variation-settings: "slnt" 0, "CRSV" 1, "SHRP" 100;
 }
 @font-face {
   font-family: "Geologica";
@@ -60,7 +68,62 @@
   font-weight: 900;
   font-style: normal;
   font-display: fallback;
+  font-variation-settings: "slnt" 0, "CRSV" 1, "SHRP" 100;
 }
-* {
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Geologica", serif;
+}
+
+body {
+  background: linear-gradient(140deg, #8b5cf6, #4f46e5);
+}
+
+.welcome-section {
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-section__title {
+  font-size: 4rem;
+  font-weight: 600;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.welcome-section__description {
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-bottom: 1.5rem;
+}
+.welcome-section__button-link {
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  box-shadow: 0 3px #999;
+  color: #7c3aed;
+  background-color: #ffffff;
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+.welcome-section__button-link:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.welcome-section__button-link:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
 }/*# sourceMappingURL=home.css.map */
